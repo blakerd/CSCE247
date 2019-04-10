@@ -1,21 +1,29 @@
-package csce247.src;
+package GRADS.src;
+
+import GRADS.src.GRADSResources.BuildingFile;
 
 public class Course {
 
     private String name;
-    private int courseID;
+    private String courseID;
     private String numCredits;
 
-    public Course(String name, int courseID, String numCredits) {
-       setName(name);
-       setCourseID(courseID);
-       setNumCredits(numCredits);
+    public Course(String name, String courseID, String numCredits) {
+        setName(name);
+        setCourseID(courseID);
+        setNumCredits(numCredits);
     }
 
-    public Course(){
+    public Course() {
         this.name = "noName";
-        this.courseID = -1;
+        this.courseID = "NoCourseID";
         this.numCredits = "noCredits";
+    }
+
+    public Course(BuildingFile bf) {
+         setName(bf.getData()[0]);
+         setCourseID(bf.getData()[1]);
+         setNumCredits(bf.getData()[2]);
     }
 
     public String getName() {
@@ -23,16 +31,16 @@ public class Course {
     }
 
     public void setName(String name) {
-        if(name != null && name.length() != 0)
+        if (name != null && name.length() != 0)
             this.name = name;
     }
 
-    public int getCourseID() {
+    public String getCourseID() {
         return courseID;
     }
 
-    public void setCourseID(int courseID) {
-        if(courseID > 0)
+    public void setCourseID(String courseID) {
+        if (courseID.length() > 0)
             this.courseID = courseID;
     }
 
@@ -41,7 +49,7 @@ public class Course {
     }
 
     public void setNumCredits(String numCredits) {
-        if(numCredits != null && numCredits.length() > 0)
+        if (numCredits != null && numCredits.length() > 0)
             this.numCredits = numCredits;
     }
 

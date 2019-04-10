@@ -8,7 +8,7 @@ public class CourseTaken extends Course {
     private Term term;
     private GradeEnum grade;
 
-    public CourseTaken(String name, int courseID, String numCredits, Term term, GradeEnum grade) {
+    public CourseTaken(String name, String courseID, String numCredits, Term term, GradeEnum grade) {
         super(name, courseID, numCredits);
         setTerm(term);
         setGrade(grade);

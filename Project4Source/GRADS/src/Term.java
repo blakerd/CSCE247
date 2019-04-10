@@ -1,5 +1,6 @@
-package csce247.src;
-import csce247.src.GRADSResources.EnumHandler.SemesterEnum;
+package GRADS.src;
+
+import GRADS.src.GRADSResources.EnumHandler.SemesterEnum;
 
 public class Term {
 
@@ -20,7 +21,7 @@ public class Term {
     }
 
     public void setSemester(SemesterEnum semester) {
-        if(semester != null)
+        if (semester != null)
             this.semester = semester;
     }
 
@@ -29,7 +30,7 @@ public class Term {
     }
 
     public void setYear(int year) {
-        if(year > 0)
+        if (year > 0)
             this.year = year;
     }
 }

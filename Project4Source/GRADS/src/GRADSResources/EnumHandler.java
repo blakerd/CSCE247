@@ -1,8 +1,8 @@
-package csce247.src.GRADSResources;
+package GRADS.src.GRADSResources;
 
 public class EnumHandler {
 
-    public enum GradeEnum{
+    public enum GradeEnum {
         A,
         B,
         C,
@@ -13,14 +13,14 @@ public class EnumHandler {
         DEFAULT;
     }
 
-    public enum UserEnum{
+    public enum UserEnum {
 
         STUDENT,
         GRADUATE_PROGRAM_COORDINATOR,
         DEFAULT;
     }
 
-    public enum SemesterEnum{
+    public enum SemesterEnum {
 
         FALL,
         SPRING,
@@ -28,7 +28,7 @@ public class EnumHandler {
         DEFAULT;
     }
 
-    public enum DeptMajorEnum{
+    public enum DeptMajorEnum {
         COMPUTER_SCIENCE,
         COMPUTER_INFORMATION_SYSTEMS,
         COMPUTER_ENGINEERING,
@@ -42,7 +42,7 @@ public class EnumHandler {
         grade = grade.toUpperCase();
         Grade = grade.charAt(0);
         for (GradeEnum g : GradeEnum.values()) {
-            if(Grade == g.toString().charAt(0)){
+            if (Grade == g.toString().charAt(0)) {
                 return g;
             }
         }
@@ -51,39 +51,38 @@ public class EnumHandler {
 
     }
 
-    public static UserEnum convertToUserEnum(String User){
+    public static UserEnum convertToUserEnum(String User) {
 
-        for (UserEnum e : UserEnum.values()){
-            if(User.equalsIgnoreCase(e.toString())){
+        for (UserEnum e : UserEnum.values()) {
+            if (User.equalsIgnoreCase(e.toString())) {
                 return e;
             }
         }
         System.out.println("Error!");
-        return null;
+        return UserEnum.DEFAULT;
     }
 
-    public static SemesterEnum convertToSemesterEnum(String semester){
+    public static SemesterEnum convertToSemesterEnum(String semester) {
 
-        for (SemesterEnum s : SemesterEnum.values()){
-            if(semester.equalsIgnoreCase(s.toString())) {
+        for (SemesterEnum s : SemesterEnum.values()) {
+            if (semester.equalsIgnoreCase(s.toString())) {
                 return s;
             }
         }
         System.out.println("Error!");
-        return null;
+        return SemesterEnum.DEFAULT;
     }
 
-    public static DeptMajorEnum convertToDeptMajorEnum(String deptMajor){
+    public static DeptMajorEnum convertToDeptMajorEnum(String deptMajor) {
 
-        for (DeptMajorEnum dm : DeptMajorEnum.values()){
-            if(deptMajor.equalsIgnoreCase(dm.toString())) {
+        for (DeptMajorEnum dm : DeptMajorEnum.values()) {
+            if (deptMajor.equalsIgnoreCase(dm.toString())) {
                 return dm;
             }
         }
         System.out.println("Error!");
-        return null;
+        return DeptMajorEnum.DEFAULT;
     }
-
 
 
 }
