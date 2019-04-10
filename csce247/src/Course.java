@@ -1,3 +1,5 @@
+package csce247.src;
+
 public class Course {
 
     private String name;

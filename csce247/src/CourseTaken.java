@@ -1,4 +1,7 @@
-import EnumHandler.GradeEnum;
+package csce247.src;
+import csce247.src.GRADSResources.EnumHandler.GradeEnum;
+
+
 
 public class CourseTaken extends Course{
 
@@ -7,20 +10,20 @@ public class CourseTaken extends Course{
 
     public CourseTaken(String name, int courseID, String numCredits, Term term, GradeEnum grade) {
         super(name, courseID, numCredits);
-        this.term = term;
-        this.grade = grade;
+        setTerm(term);
+        setGrade(grade);
     }
 
     public CourseTaken(Course c, Term term, GradeEnum grade) {
         super(c.getName(), c.getCourseID(), c.getNumCredits());
-        this.term = term;
-        this.grade = grade;
+        setTerm(term);
+        setGrade(grade);
     }
 
     public CourseTaken() {
         super();
-        this.term = null;
-        this.grade = null;
+        this.term = new Term();
+        this.grade = GradeEnum.DEFAULT;
     }
 
     public Term getTerm() {
@@ -28,7 +31,8 @@ public class CourseTaken extends Course{
     }
 
     public void setTerm(Term term) {
-        this.term = term;
+        if(term != null)
+            this.term = term;
     }
 
     public GradeEnum getGrade() {

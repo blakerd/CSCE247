@@ -1,5 +1,4 @@
-
-import java.util.EnumSet;
+package csce247.src.GRADSResources;
 
 public class EnumHandler {
 
@@ -10,26 +9,30 @@ public class EnumHandler {
         D,
         F,
         P,
-        taking;
+        taking,
+        DEFAULT;
     }
 
     public enum UserEnum{
 
         STUDENT,
-        GRADUATE_PROGRAM_COORDINATOR;
+        GRADUATE_PROGRAM_COORDINATOR,
+        DEFAULT;
     }
 
     public enum SemesterEnum{
 
         FALL,
         SPRING,
-        SUMMER;
+        SUMMER,
+        DEFAULT;
     }
 
     public enum DeptMajorEnum{
         COMPUTER_SCIENCE,
         COMPUTER_INFORMATION_SYSTEMS,
-        COMPUTER_ENGINEERING;
+        COMPUTER_ENGINEERING,
+        DEFAULT;
     }
 
 
