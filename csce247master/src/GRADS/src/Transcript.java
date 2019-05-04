@@ -30,9 +30,7 @@ public class Transcript {
 		if(ctl != null)
 			this.ctl = ctl;
 	}
-	 public void testing() {
-		 
-	 }
+
 	@Override
 	public String toString() {
 		return "Transcript [notes=" + notes + ", ctl=" + ctl + "]";
