@@ -67,4 +67,11 @@ public class StudentRecord {
     public void setNotes(Notes notes) {
         this.notes = notes;
     }
+
+	@Override
+	public String toString() {
+		return "StudentRecord [student=" + student + ", major=" + major + ", termBegan=" + termBegan + ", advisor="
+				+ advisor + ", coursesTaken=" + coursesTaken + ", notes=" + notes + "]";
+	}
+    
 }

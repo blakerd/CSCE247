@@ -41,4 +41,12 @@ public class Notes {
             }
         }
     }
+    
+    public String toString() {
+    	String returnSt = "";
+    	for(String a : notes) {
+    		returnSt += a + " ";
+    	}
+    	return returnSt;
+    }
 }

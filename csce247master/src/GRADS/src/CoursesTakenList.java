@@ -25,4 +25,13 @@ public class CoursesTakenList {
         //coursesTaken.clear();
         coursesTaken = new ArrayList<CourseTaken>();
     }
+
+	@Override
+	public String toString() {
+		String returnString = "";
+		for(CourseTaken a : coursesTaken)
+			returnString+=a+" ";
+		return "CoursesTakenList [coursesTaken=" + returnString + "]";
+	}
+    
 }
