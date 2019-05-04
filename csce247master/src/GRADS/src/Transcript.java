@@ -11,6 +11,7 @@ public class Transcript extends ProgressSummary{
 	public Transcript(Notes newNotes, CoursesTakenList newCtl) {
 		this.setCtl(newCtl);
 		this.setNotes(newNotes);
+		
 	}
 
 	public Notes getNotes() {
