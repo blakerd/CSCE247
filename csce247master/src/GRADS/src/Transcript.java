@@ -8,9 +8,10 @@ public class Transcript extends ProgressSummary{
 	private Notes notes = new Notes();
 	private CoursesTakenList ctl = new CoursesTakenList();
 	
-	public Transcript(Notes newNotes, CoursesTakenList newCtl) {
+	public Transcript(Notes newNotes, CoursesTakenList newCtl, Student student, DeptMajorEnum major, double gradPercent, double majorGPA, double overallGPA, TermBegan termBegan, Advisor advisor, ReqCheckResults reqChecklist) {
 		this.setCtl(newCtl);
 		this.setNotes(newNotes);
+		super(student, major, gradPercent, majorGPA, overallGPA, termBegan, advisor, reqChecklist);
 	}
 
 	public Notes getNotes() {
