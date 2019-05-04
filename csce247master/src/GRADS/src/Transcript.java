@@ -3,7 +3,7 @@ package GRADS.src;
 import GRADS.src.Notes;
 import GRADS.src.CoursesTakenList;
 
-public class Transcript {
+public class Transcript extends ProgressSummary{
 	
 	private Notes notes = new Notes();
 	private CoursesTakenList ctl = new CoursesTakenList();
