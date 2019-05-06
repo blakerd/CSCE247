@@ -51,7 +51,7 @@ public class Course {
     }
     /**
   	* Sets the name of the given course to name
-    * @param name is the name of the course 
+    * @param name is the name of the course
   	*/
     public void setName(String name) {
         if (name != null && name.length() != 0)
