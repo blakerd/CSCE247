@@ -6,5 +6,6 @@
 	<classpathentry kind="src" path="Project4Source"/>
 	<classpathentry kind="lib" path="gson-2.6.2.jar"/>
 	<classpathentry kind="lib" path="IntelliJ Workspace/gson-2.6.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="IntelliJ Workspace/out/production/IntelliJ Workspace"/>
 </classpath>
