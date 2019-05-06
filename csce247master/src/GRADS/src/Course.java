@@ -4,15 +4,24 @@ import GRADS.src.GRADSResources.BuildingFile;
 
 public class Course {
 
+    /*
+     *
+     */
     private String name;
     private String courseID;
     private String numCredits;
+    
+    /* @param name is the name of a class
+     * @param courseID is the course ID 
+     * @param
+     */
 
     public Course(String name, String courseID, String numCredits) {
         setName(name);
         setCourseID(courseID);
         setNumCredits(numCredits);
     }
+
 
     public Course() {
         this.name = "noName";
