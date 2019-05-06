@@ -7,7 +7,10 @@ public class UserSession {
     private User user;
     private long timeAtInit;
     private boolean isValid;
-
+    
+    /**
+     * The defauts constructor that sets the attributes of a user ession.
+     */
     public UserSession(User user){
         this.user = user;
         timeAtInit = System.currentTimeMillis();
