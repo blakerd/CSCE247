@@ -5,13 +5,30 @@ import GRADS.src.GRADSResources.EnumHandler;
 import GRADS.src.GRADSResources.EnumHandler.*;
 
 public class User {
-
+    /**
+     * The ID number of the network in string form
+     */
     private String networkID;
+    /**
+     * The name of the user's first name
+     */
     private String firstName;
+    /**
+     * The name of the user's last name
+     */
     private String lastName;
+    /**
+     * An Enum to clearify what level of permissions the user gets.
+     */
     private UserEnum role;
+    /**
+     * The program or Department Major of the user
+     */
     private DeptMajorEnum program;
-
+    
+    /**
+     * Overides the toString() method to include this information.
+     */
     @Override
     public String toString() {
         return "User{" +
@@ -22,7 +39,15 @@ public class User {
                 ", program=" + program +
                 '}';
     }
-
+    
+    /**
+     * Constructor that sets all the given parameters for Check
+     * @param networkID is the network id of the user
+     * @param firstName is the first name of the user
+     * @param lastName is the last name of the user
+     * @param role is the role of the user, effecting the level of persmissions the user is given
+     * @param program is the program or department major of the user
+     */
     public User(String networkID, String firstName, String lastName, UserEnum role, DeptMajorEnum program) {
         setNetworkID(networkID);
         setFirstName(firstName);
@@ -30,9 +55,10 @@ public class User {
         setRole(role);
         setProgram(program);
     }
-
+    /**
+     * Defaults constructor for User
+     */
     public User(){
-
         setNetworkID("NoNetworkID");
         setFirstName("NoFirstName");
         setLastName("NoLastName");
@@ -41,7 +67,6 @@ public class User {
     }
 
     public User(BuildingFile user){
-
         setNetworkID(user.getData()[0]);
         setFirstName(user.getData()[1]);
         setLastName(user.getData()[2]);
