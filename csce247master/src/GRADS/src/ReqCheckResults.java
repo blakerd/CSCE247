@@ -10,16 +10,8 @@ public class ReqCheckResults {
     public ReqCheckResults() {
         results = new ArrayList<Check>();
     }
-    
-    public ArrayList<Check> getResults() {
-		return results;
-	}
 
-	public void setResults(ArrayList<Check> results) {
-		this.results = results;
-	}
-
-	public void addTakenCourse(Check result) {
+    public void addTakenCourse(Check result) {
         results.add(result);
     }
 

@@ -13,16 +13,6 @@ public class ProgressSummary {
 	private Advisor advisor;
 	private ReqCheckResults reqChecklist;
 	
-	public ProgressSummary(Student student, DeptMajorEnum major, double gradPercent, double majorGPA, double overallGPA, TermBegan termBegan, Advisor advisor, ReqCheckResults reqChecklist) {
-		this.setStudent(student);
-		this.setMajor(major);
-		this.setGradPercent(gradPercent);
-		this.setMajorGPA(majorGPA);
-		this.setOverallGPA(overallGPA);
-		this.setTermBegan(termBegan);
-		this.setAdvisor(advisor);
-		this.setReqChecklist(reqChecklist);
-	}
 	public Student getStudent() {
 		return student;
 	}
