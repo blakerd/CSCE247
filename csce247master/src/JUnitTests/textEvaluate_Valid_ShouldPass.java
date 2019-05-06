@@ -9,10 +9,12 @@ class textEvaluate_Valid_ShouldPass {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		
 	}
 
 	@AfterEach
 	void tearDown() throws Exception {
+		
 	}
 
 	@Test
