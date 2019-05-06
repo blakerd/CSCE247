@@ -45,6 +45,7 @@ public class Course {
     }
     /**
   	* Returns the name of the given course
+    * @return the name of this student
   	*/
     public String getName() {
         return name;
@@ -57,25 +58,40 @@ public class Course {
         if (name != null && name.length() != 0)
             this.name = name;
     }
-
+    /**
+    * Returns the course ID for the given class instance
+    * @return the courses ID
+    */
     public String getCourseID() {
         return courseID;
     }
-
+    /**
+    * Sets the value of the course id to courseID
+    * @param courseID represents the course ID for the class
+    */
     public void setCourseID(String courseID) {
         if (courseID.length() > 0)
             this.courseID = courseID;
     }
-
+    /**
+    * Returns the number of credit hours for the given course
+    * @return the number of credit hours for the class
+    */
     public String getNumCredits() {
         return numCredits;
     }
-
+    /**
+    * Sets the number of credits for the given class
+    * @param numCredits is the number of credits for the given course
+    */
     public void setNumCredits(String numCredits) {
         if (numCredits != null && numCredits.length() > 0)
             this.numCredits = numCredits;
     }
-
+    /**
+    * This is the toString method that is used to concatenate the data of course
+    * @return the concatenated string 
+    */
     @Override
     public String toString() {
         return "Course{" +
