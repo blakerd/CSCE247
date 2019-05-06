@@ -33,30 +33,49 @@ Test setPassedCheck{
 
 
 // THIS IS THE GRADS CLASS
-Test setName GRADS
-Test get name GRADS
-Test set course ID
-Test get corse ID
-Test set numCredits
-Test get numCredits
+Test setName GRADS{
 
-Test add taken corse CorsesTakenList
+}
+Test getName GRADS{
 
-Test set term corse taken
-Test get term corse taken
-Test set GradeEnum corse taken
-Test get GradeEnum corse taken
+}
+Test setCourseID{
 
-Test set double GRADS
-Test get double GRADS
-Test gpa negative G
-Test gpa over four G
-Test is passed G
-Test set Passed G
-Test get Passed G
-Test add taken courses
-Test add taken courses arrya G
-Test can empty list
+}
+Test getCourseID{
+
+}
+Test setNumCredits{
+
+}
+Test getNumCredits{
+
+}
+
+
+
+// COURSES TAKEN LIST
+Test addTakenCourse CorsesTakenList{
+
+}
+
+
+// CORSES TAKEN
+Test setTerm corse taken
+Test getTerm corse taken
+Test setGradeEnum corse taken
+Test getGradeEnum corse taken
+
+Test setGPA GRADS
+Test getGPA GRADS
+Test gpaNegative G
+Test gpaOverFour G
+Test isPassed G
+Test setPassed G
+Test getPassed G
+Test addTakenCourses
+Test addTakenCoursesArrya G
+Test canEmptyList
 
 Test add note Notes
 Test add note array Notes
