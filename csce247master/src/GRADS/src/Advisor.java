@@ -4,6 +4,7 @@ import GRADS.src.GRADSResources.EnumHandler.*;
 
 public class Advisor extends User {
     /**
+    * The default constructor that sets the attributes of advisor.
     */
     public Advisor(){
         super();

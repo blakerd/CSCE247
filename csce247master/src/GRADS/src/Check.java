@@ -1,9 +1,17 @@
 package GRADS.src;
 
 public class Check {
-
+	/**
+	* The name of the class
+	*/
 	private String name;
+	/**
+	* The details object of the class
+	*/
 	private Details details;
+	/**
+	* The value for whether the class was passed or not
+	*/
 	private boolean passed;
 	/**
 	* Constructor that sets all the given parameters for Check
@@ -51,11 +59,16 @@ public class Check {
 	public void setDetails(Details details) {
 		this.details = details;
 	}
-
+	/**
+	* Method that returns the calling instances isPassed value
+	*/
 	public boolean isPassed() {
 		return passed;
 	}
-
+	/**
+	* Method that sets the passed variable for the calling instances
+	* @param passed is the boolean value of whether or not the class was passed
+	*/
 	public void setPassed(boolean passed) {
 		this.passed = passed;
 	}
